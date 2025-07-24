@@ -8,7 +8,7 @@ public class WriteFileExample {
         String text = "Hello I/O!";
         try (FileOutputStream fos = new FileOutputStream("data.txt")) {
             fos.write(text.getBytes());
-            System.out.println("Файл записано.");
+            System.out.println("File is written.");
         } catch (IOException e) {
             e.printStackTrace();
         }
