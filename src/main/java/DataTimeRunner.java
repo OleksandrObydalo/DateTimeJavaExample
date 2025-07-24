@@ -1,10 +1,12 @@
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
 
 public class DataTimeRunner {
     public static void main(String[] args) {
         Instant instant = Instant.now();
+        System.out.println("Instant:");
         System.out.println(instant);
         System.out.println(instant.toEpochMilli());
         System.out.println(Instant.ofEpochSecond(0));
@@ -14,5 +16,10 @@ public class DataTimeRunner {
 
         System.out.println(instant.plus(1, ChronoUnit.HOURS));
 //        System.out.println(instant.plus(1, ChronoUnit.MONTHS)); //Causes Runtime error, as you can't add month to Instant
+
+        System.out.println("LocalDateTime:");
+        LocalDateTime localDateTime = LocalDateTime.now();
+        System.out.println(localDateTime);
+        System.out.println(localDateTime.plus(1, ChronoUnit.MONTHS));
     }
 }
