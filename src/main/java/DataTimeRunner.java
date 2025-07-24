@@ -23,5 +23,7 @@ public class DataTimeRunner {
         Duration duration = Duration.ofDays(1);
         System.out.println("Day has " + duration.getSeconds() + " seconds");
 
+        Period period = Period.of(1, 2, 25);
+        System.out.println(period.plusDays(5).plusMonths(6));
     }
 }
