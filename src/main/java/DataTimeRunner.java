@@ -1,6 +1,4 @@
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
+import java.time.*;
 import java.time.temporal.ChronoUnit;
 
 public class DataTimeRunner {
@@ -21,5 +19,9 @@ public class DataTimeRunner {
         LocalDateTime localDateTime = LocalDateTime.now();
         System.out.println(localDateTime);
         System.out.println(localDateTime.plus(1, ChronoUnit.MONTHS));
+
+        Duration duration = Duration.ofDays(1);
+        System.out.println("Day has " + duration.getSeconds() + " seconds");
+
     }
 }
