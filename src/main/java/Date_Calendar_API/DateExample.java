@@ -9,6 +9,7 @@ public class DateExample {
 
         long millis = date.getTime();
         System.out.println("Мілісекунди від 1970: " + millis);
+        System.out.println("System.currentTimeMillis(): " + System.currentTimeMillis());
     }
 }
 
